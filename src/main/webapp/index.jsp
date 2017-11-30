@@ -32,33 +32,10 @@
        <br />
        <br />
        <br />
-       <br />
-       <br />
-       <br />
-       <form method="POST" action='Servlet' name="frmAddUser">
-        Nombre del Esquema: <input type="text" name="esquema"/> <br /> 
-        <input type="submit" value="CREAR" />
-    </form>
-        <br />
-        <br />
-        <br />
-        <form method="POST" action='ServletDelete' name="frmAddr">
-        Nombre del Esquema: <input type="text" name="esquema"/> <br /> 
-        <input type="submit" value="BORRAR" />
-    </form>
-        <br />
-        <br />
-        <br />
-        <form method="POST" action='ServletActualizar' name="frddUser">
-        Nombre del Esquema: <input type="text" name="esquema"/> <br /> 
-        Nuevo nombre del Esquema: <input type="text" name="esquema2"/> <br />
-        <input type="submit" VALUE ="ACTUALIZAR"/><br/> 
-    </form>
-         <br />
-         <br />
-         <br />
-         <form method="GET" action='ServletEsquemas' name="frr">
-                        <font color="white"><h2>HISTORIAL</h2></font>
+       
+         
+         <form method="POST" action='ServletTabla' name="frr">
+                        <font color="white"><h2>Tabla</h2></font>
                         <br>
                        
                             <table  width="400" border="2" align="center">
@@ -78,12 +55,12 @@
                                         for (Esquema e : esqq) {
                                 %>
                                 <tr>
-                                    <td><%= e.getIdEsquema() %></td>
-                                    <td><%= e.getName() %></td>
-                                    <td><%= e.getIdEsquema() %></td>
-                                    <td><%= e.getIdEsquema() %></td>
-                                    <td><%= e.getIdEsquema() %></td>
-                                    <td><%= e.getIdEsquema() %></td>
+                                    <td><%= e.getIdcolmenahija() %></td>
+                                    <td><%= e.getIdcol() %></td>
+                                    <td><%= e.getUbicacion() %></td>
+                                    <td><%= e.getIdcaja() %></td>
+                                    <td><%= e.getIdfamiliam() %></td>
+                                    <td><%= e.getsum() %></td>
                                     
                                 </tr>
                                 <%
@@ -91,12 +68,10 @@
                                     }
                                 %>
                             </table>
-                                 <input type="submit" VALUE ="HISTORIAL"/><br/>  
+                                 
                 
          </form>
         
-        <a href="index.html"> Volver </a><br/>
+       
     </body>
 </html>
-<%}//else{
-%>
