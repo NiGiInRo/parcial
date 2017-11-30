@@ -48,7 +48,7 @@
                                 </tr>
                                 <%    if (request.getAttribute("reportes") != null) {
                                         ArrayList<Reporte> esqq = (ArrayList<Reporte>) request.getAttribute("reportes");
-                                        for (Esquema e : esqq) {
+                                        for (Reporte e : esqq) {
                                 %>
                                 <tr>
                                     <td><%= e.getIdcolmenahija() %></td>
@@ -56,7 +56,7 @@
                                     <td><%= e.getUbicacion() %></td>
                                     <td><%= e.getIdcaja() %></td>
                                     <td><%= e.getIdfamiliam() %></td>
-                                    <td><%= e.getsum() %></td>
+                                    <td><%= e.getSum()%></td>
                                     
                                 </tr>
                                 <%
