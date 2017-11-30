@@ -3,7 +3,8 @@
     Created on : 29/11/2017, 09:27:50 PM
     Author     : nicol
 --%>
-
+<%@page import="Modelo.Reporte"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
